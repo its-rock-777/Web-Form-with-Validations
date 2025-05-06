@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Candidate Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <form id="candidateForm">
+      <h2>Candidate Assignment Form</h2>
+
+      <div class="form-group">
+        <label for="name">Full Name*</label>
+        <input type="text" id="name" required />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email*</label>
+        <input type="email" id="email" required />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group toggle-group">
+        <label for="phoneToggle">Phone Number Toggle</label>
+        <label class="switch">
+          <input type="checkbox" id="phoneToggle" checked />
+          <span class="slider round"></span>
+        </label>
+      </div>
+
+      <div class="form-group" id="phoneGroup">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password*</label>
+        <input type="password" id="password" required />
+        <small class="error"></small>
+      </div>
+
+      <div class="form-group">
+        <label for="language">Language*</label>
+        <select id="language" required>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="nl">Dutch</option>
+          <option value="it">Italian</option>
+          <option value="de">German</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="about">About Yourself*</label>
+        <textarea id="about" rows="5" required></textarea>
+        <small class="error"></small>
+      </div>
+
+      <button type="submit" id="saveBtn" disabled>Save</button>
+      <p class="success-msg" id="successMsg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
