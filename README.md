@@ -38,10 +38,9 @@ https://its-rock-777.github.io/Web-Form-with-Validations/
 - **POST API:** `https://admin-staging.whydonate.dev/whydonate/assignment`
 - **Note:** While a 200 status code is returned, the API responds with `"Invalid request route"`, indicating the data is not being stored. This implementation is meant to demonstrate front-end validation and UX.
 
----
 
 ## Folder Structure
 /candidate-assignment
-index.html
-script.js
-style.css
+ - index.html
+ - script.js
+ - style.css
